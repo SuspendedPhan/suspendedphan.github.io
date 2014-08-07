@@ -13,3 +13,30 @@ p {
 	margin-right: auto;
 	max-width: 80ch;
 }
+
+@media all and (min-width: 960px) {
+    .name {
+        font-size: 8em;
+    }
+    .links {
+    	font-size: 3em;
+    }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .name {
+        font-size: 6em;
+    }
+    .links {
+    	font-size: 2em;
+    }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+    .name {
+        font-size: 4em;
+    }
+	 .links {
+	 	font-size: 2em;
+	 }
+}
