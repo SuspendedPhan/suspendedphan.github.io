@@ -14,6 +14,11 @@ p {
 	max-width: 80ch;
 }
 
+.link {
+	text-decoration: none;
+	color: blue;
+}
+
 @media all and (min-width: 960px) {
     .name {
         font-size: 8em;
