@@ -18,26 +18,28 @@
       <a class="link" href="https://soundcloud.com/panison">Music</a>
     </div>
   </div>
+  <br>
+  <h1>Ray tracing engine</h1>
   <div>
     <p>This is a burning rock smashing through glass. There's also a giant fireball to the left, some kind of plasma burst thing on the right, and a sun-ish in the distance. This was all done with a ray tracing engine built from scratch.</p>
-    <img src="img/graphics/1.png" />
+    <div class="graphics-container"><img src="img/graphics/1.png" /></div>
     <p>The fire is accomplished through volumetric emission. It first started with a glowing sphere.</p>
-    <img src="img/graphics/2.png" />
+    <div class="graphics-container"><img src="img/graphics/2.png" /></div>
     <p>Then, the sphere emits a gradient of colors based on distance from the center. Fades from yellow at the center, to red, to orange, to gray, to black at the edge.</p>
-    <img src="img/graphics/3.png" />
+    <div class="graphics-container"><img src="img/graphics/3.png" /></div>
     <p>Now we add Worley noise to bump the gradient a little bit at each xyz position. Fire!</p>
-    <img src="img/graphics/4.png" />
+    <div class="graphics-container"><img src="img/graphics/4.png" /></div>
     <p>How 2 make shattering glass? Generate a bunch of tetrahedrons in a box. The tetrahedrons near the center of the box are smaller and more numerous.</p>
-    <img src="img/graphics/5.png" />
+    <div class="graphics-container"><img src="img/graphics/5.png" /></div>
     <p>Now I have accomplished my life long vision of a fireball smashing through glass.</p>
-    <img src="img/graphics/6.png" />
+    <div class="graphics-container"><img src="img/graphics/6.png" /></div>
     <p>Add some more fireballs.</p>
-    <img src="img/graphics/7.png" />
+    <div class="graphics-container"><img src="img/graphics/7.png" /></div>
     <p>Mess around with ground materials.</p>
-    <img src="img/graphics/8.png" />
-    <img src="img/graphics/9.png" />
+    <div class="graphics-container"><img src="img/graphics/8.png" /></div>
+    <div class="graphics-container"><img src="img/graphics/9.png" /></div>
     <p>Final image.</p>
-    <img src="img/graphics/1.png" />
+    <div class="graphics-container"><img src="img/graphics/1.png" /></div>
   </div>
 </body>
 </html>

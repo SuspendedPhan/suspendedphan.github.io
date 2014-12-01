@@ -8,6 +8,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.graphics-container {
+	margin-bottom: 5%;
+}
+
 .rama1-color {
 	background-color: #1d222f;
 }
@@ -62,7 +66,7 @@ img {
 }
 
 .graphics-page img {
-	margin-bottom: 5%;
+	/*margin-bottom: 5%;*/
 }
 
 p {
