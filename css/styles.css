@@ -8,8 +8,29 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.fade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,0) 20%,
+                rgba(0,0,0,0) 95%,
+                rgba(0,0,0,1) 100%
+    );
+    top: 0;
+}
+
+.outer-graphics-container {
+    margin-bottom: 5%;
+    background-color: black;
+}
+
 .graphics-container {
-	margin-bottom: 5%;
+    display: inline-block;
+    position: relative;
+/*	margin-bottom: 5%;*/
+/*    background-color: hsl(226, 13%, 20%)*/
 }
 
 .rama1-color {
@@ -79,6 +100,11 @@ p {
 .link {
 	text-decoration: none;
 	color: blue;
+}
+
+.external {
+    position: relative;
+    top: .2vw;
 }
 
 @media all and (min-width: 960px) {

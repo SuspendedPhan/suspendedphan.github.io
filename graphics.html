@@ -6,6 +6,7 @@
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
   <script type="text/javascript" src="js/resize-scroll.js"></script>
 </head>
@@ -15,16 +16,27 @@
     <div class="links">
       <a class="link" href="http://www.dylanphan.com">Interactive Technology</a></br>
       <span href="graphics.html">Graphics</span></br>
-      <a class="link" href="https://soundcloud.com/panison">Music</a>
+      <a class="link" href="https://soundcloud.com/dotless">Music<i class="fa fa-external-link external" style="transform: scale(.5)"></i></a>
     </div>
   </div>
   <br>
   <h1>Ray tracing engine</h1>
   <div>
     <p>This is a burning rock smashing through glass. There's also a giant fireball to the left, some kind of plasma burst thing on the right, and a sun-ish in the distance. This was all done with a ray tracing engine built from scratch.</p>
-    <div class="graphics-container"><img src="img/graphics/1.png" /></div>
+    <div class="outer-graphics-container">
+        <div class="graphics-container">
+            <div class="fade"></div>
+            <img src="img/graphics/1.png" />
+        </div>
+    </div>
+      
     <p>The fire is accomplished through volumetric emission. It first started with a glowing sphere.</p>
-    <div class="graphics-container"><img src="img/graphics/2.png" /></div>
+    <div class="outer-graphics-container">
+        <div class="graphics-container">
+            <div class="fade"></div>
+            <img src="img/graphics/2.png" />
+        </div>
+    </div>
     <p>Then, the sphere emits a gradient of colors based on distance from the center. Fades from yellow at the center, to red, to orange, to gray, to black at the edge.</p>
     <div class="graphics-container"><img src="img/graphics/3.png" /></div>
     <p>Now we add Worley noise to bump the gradient a little bit at each xyz position. Fire!</p>
