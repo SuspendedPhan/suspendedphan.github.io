@@ -9,57 +9,166 @@
   <script src="js/main.js"></script>
   <title>Dylan Phan</title>
 </head>
-<body>
-  <div class="header">
-    <div class="name" style="margin: 0">Dylan Phan</div>
-    <div class="links">
-      <div>Interactive Technology</div>
-      <a class="link" href="graphics">Graphics</a></br>
-      <a class="link" href="https://soundcloud.com/dotless">Music<i class="fa fa-external-link external" style="transform: scale(.5)"></i></a>
-    </div>
-  </div>
-  </br>
+  <body>
+    <div id="container">
+      <h1 id="zooxautonomousvehicles">Zoox (autonomous vehicles)</h1>
 
-  <div style="background-color: #FEFEFE">
-    <h1>Rama-Rama</h1>
-    <p>Teams first build a fort on a giant touch screen, and then launch balls over the ceiling in an attempt to destroy the opponent&#39;s fort.</p>
+      <p>2019/10 - 2020/09<br>
+      Software Engineer<br>
+      Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release Management</p>
+      
+      <h2 id="coredash">CoreDash</h2>
+      
+      <p>The safety operator's (passenger seat) user interface to the vehicle
+      AI on daily autonomous test drives. I helped completely rewrite this software.</p>
+      
+      <h3 id="whatwasmyimpact">What was my impact?</h3>
+      
+      <p>I coded the mission UI. Without my work, the vehicle could not move.</p>
+      
+      <h3 id="whywasitdifficult">Why was it difficult?</h3>
+      
+      <ul>
+      <li>Some features could only be tested on-vehicle. It took live debugging over chat
+      to get leads on any bugs.</li>
+      
+      <li>Missions required a single point of coordination with 3 other teams.</li>
+      
+      <li>Required judgement calls on how to handle edge cases beyond the UI mockup.</li>
+      
+      <li>Unique, heterogeneous IPC stack required troubleshooting messaging problems
+      and caused build problems on individual dev machines.</li>
+      
+      <li>Complex async state with clunky APIs.</li>
+      </ul>
+      
+      <h2 id="fleetpairingdashboard">Fleet Pairing Dashboard</h2>
+      
+      <p>A web UI to help manage vehicle configuration.</p>
+      
+      <h3 id="whatwasmyimpact-1">What was my impact?</h3>
+      
+      <p>The UI prevented demo failures and enabled users outside the dev team: demo operators, QA, other devs.</p>
+      
+      <h3 id="whywasitdifficult-1">Why was it difficult?</h3>
+      
+      <ul>
+      <li>I created this dashboard from scratch by myself.</li>
+      
+      <li>This was an urgent request, and I had to learn Vue.</li>
+      
+      <li>No support from UX designers.</li>
+      </ul>
+      
+      <h1 id="makingart">Making Art</h1>
+      
+      <p>2018/07 - 2019/10</p>
+      
+      <h1 id="google">Google</h1>
+      
+      <p>2016/07 - 2018/07<br>
+      Software Engineer<br>
+      Keywords: AR/VR, 3D, Unity, iOS, Android, C++, Shaders, Education</p>
+      
+      <h2 id="googleexpeditions">Google Expeditions</h2>
+      
+      <p>Teachers can use Google Cardboard to lead students on a VR field trip or use AR to teach objects.<br>
+      We launched the 2.0 version, which introduced AR.</p>
+      
+      <h3 id="whatwasmyimpact-2">What was my impact?</h3>
+      
+      <p>I coded the 3D and 2D UI for AR manipulation.
+      I helped us meet the quality bar for launch.</p>
+      
+      <h3 id="whywasitdifficult-2">Why was it difficult?</h3>
+      
+      <ul>
+      <li>Codebase spanned iOS, Android and C++. Getting any new UI input to the renderer required
+      modifying layers and layers.</li>
+      
+      <li>I fixed a time-dependent networking bug inherited from authors long gone.</li>
+      </ul>
+      
+      <h2 id="toontastic">Toontastic</h2>
+      
+      <p>Kids can create cartoons by controlling puppets and improving a story.</p>
+      
+      <h3 id="whatwasmyimpact-3">What was my impact?</h3>
+      
+      <p>I coded the scene arrangement and music selection UIs.<br>
+      I made character control really juicy.<br>
+      I helped us meet the quality bar for launch.</p>
+      
+      <h3 id="whywasitdifficult-3">Why was it difficult?</h3>
+      
+      <p>The procedurally generated curve for the story arc required my own design instincts beyond
+      the single frame mockup.</p>
+      
+      <h2 id="tiltbrushvrarttool20project">Tilt Brush (VR art tool) - 20% project</h2>
+      
+      <h3 id="whatwasmyimpact-4">What was my impact?</h3>
+      
+      <p>I made paintbrushes that were wackier than any existing brush. Procedurally generated.</p>
+      
+      <h3 id="whywasitdifficult-4">Why was it difficult?</h3>
+      
+      <ul>
+      <li>I decided what the brushes would look like.</li>
+      
+      <li>Shader code is hard to debug.</li>
+      </ul>
+      
+      <h1 id="google-1">Google</h1>
+      
+      <p>2015/07 - 2016/07
+      Software Engineer Resident
+      Keywords - C++, Motion Planning, Visualization, Android</p>
+      
+      <h2 id="waymoautonomousvehicles">Waymo (autonomous vehicles)</h2>
+      
+      <p>I was on the motion planning team.</p>
+      
+      <h3 id="whatwasmyimpact-5">What was my impact?</h3>
+      
+      <p>I improved our collision mitigation and collected metrics to show evidence.<br>
+      I reduced the number of pedestrian collisions in simulation.</p>
+      
+      <h3 id="whywasitdifficult-5">Why was it difficult?</h3>
+      
+      <p>I hypothesized algorithms, tested them in simulation, then threw them away and tried again.</p>
+      
+      <h2 id="androidsbuiltinalarmclockapp">Android's Builtin Alarm Clock App</h2>
+      
+      <h3 id="whatwasmyimpact-6">What was my impact?</h3>
+      
+      <p>I made improvements to the UI.</p>
+      
+      <h1 id="google-2">Google</h1>
+      
+      <p>2014, Summer<br>
+      Software Engineer Intern<br>
+      Keywords: Javascript, CSS, Web Animations, Closure Compiler</p>
+      
+      <h2 id="internalwebframework">Internal Web Framework</h2>
+      
+      <p>Like React, but for different needs.</p>
+      
+      <h3 id="whatwasmyimpact-7">What was my impact?</h3>
+      
+      <p>I made the framework compatible with Web Components.<br>
+      I made Material Design components for the framework's library.</p>
+      
+      <h1 id="nirvanix">Nirvanix</h1>
+      
+      <p>2011 - 2014, Intermittent
+      Keywords: Backend, DevOps</p>
+      
+      <p>Quirky things I've made
+      Lemongrassia
+      Rama Rama
+      Ad Infinitum
+      Ray Tracer
+      Ableton MaxMSP Device</p>
   </div>
-  <div id="img1" class="rama1-color">
-    <div class="shadow">
-      <img src="img/rama1.jpg">
-    </div>
-  </div>
-  <div class="ramayoutube-color">
-    <div class="outer-video-container ">
-      <div class="video-container">
-        <iframe id="ytplayer" type="text/html" width="1920" height="1080"
-          src="http://www.youtube.com/embed/3tTbHN0qpM4?color=white&rel=0"
-          allowfullscreen
-          frameborder="0">
-        </iframe>
-      </div>
-    </div>
-  </div>
-  <div class="ramasketch-color">
-    <img src="img/rama-sketch.jpg"></br>
-  </div>
-  <h1>Ad Infinitum&#179;</h1>
-  <p>55-player arcade game, where users login with smartphones and use them to control individual characters. Game is displayed across a wall of 32 HD monitors, and the final scene is a boss battle against a Kinect-tracked dancer controlling the creature in the game.</p>
-  <div class="aiyoutube-color">
-    <div class="outer-video-container ">
-      <div class="video-container">
-        <iframe id="ytplayer" type="text/html" width="1920" height="1080"
-          src="http://www.youtube.com/embed/x2JLqvs613c?color=white&rel=0"
-          allowfullscreen
-          frameborder="0">
-        </iframe>
-      </div>
-    </div>
-  </div>
-  <div class="ai1-color">
-    <img src="img/adinfinitum1.jpg"></br>
-  </div>
-  <p>Character art.</br>Credit: Liz Cai (along with the rest of the art on this page...)</p>
-  <img src="img/adinfinitum-55hellspawn.png"></br>
-</body>
+  </body>
 </html>
