@@ -2,22 +2,41 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Blinker' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="js/main.js"></script>
   <title>Dylan Phan</title>
 </head>
   <body>
-    <div id="container">
-      <h1 id="zooxautonomousvehicles">Zoox (autonomous vehicles)</h1>
+    
+    <div id="topsection">
+      <div class="width">
+        <div id="open">OPEN FOR BUSINESS</div>
+        <p>
+          I make web apps, desktop apps, and software tools.<br>
+          Looking for project based work!
+        </p>
+        <p>
+          Dylan Phan<br>
+          hello@dylanphan.com
+        </p>
+      </div>
+    </div>
 
-      <p>2019/10 - 2020/09<br>
-      Software Engineer<br>
-      Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release Management</p>
+    <div class="width experience mt40">
+      <h2 class="center">Work Experience</h2>
+      <div class="center my20"><img src="img/chevron.svg" /></div>
+
+      <div class="company">
+        <h1 id="zooxautonomousvehicles" class="my0">Zoox (autonomous vehicles)</h1>
+        <h1 class="my0">2019/10 - 2020/09</h1>
+      </div>
+      <h3>Software Engineer</h3>
+      <p class="divide">Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release Management</p>
       
-      <h2 id="coredash">CoreDash</h2>
+      <h2 id="coredash" class="center">CoreDash</h2>
       
       <p>The safety operator's (passenger seat) user interface to the vehicle
       AI on daily autonomous test drives. I helped completely rewrite this software.</p>
@@ -28,7 +47,7 @@
       
       <h3 id="whywasitdifficult">Why was it difficult?</h3>
       
-      <ul>
+      <ul class="divide">
       <li>Some features could only be tested on-vehicle. It took live debugging over chat
       to get leads on any bugs.</li>
       
@@ -42,7 +61,7 @@
       <li>Complex async state with clunky APIs.</li>
       </ul>
       
-      <h2 id="fleetpairingdashboard">Fleet Pairing Dashboard</h2>
+      <h2 id="fleetpairingdashboard" class="center">Fleet Pairing Dashboard</h2>
       
       <p>A web UI to help manage vehicle configuration.</p>
       
@@ -52,7 +71,7 @@
       
       <h3 id="whywasitdifficult-1">Why was it difficult?</h3>
       
-      <ul>
+      <ul class="divide">
       <li>I created this dashboard from scratch by myself.</li>
       
       <li>This was an urgent request, and I had to learn Vue.</li>
@@ -60,17 +79,22 @@
       <li>No support from UX designers.</li>
       </ul>
       
-      <h1 id="makingart">Making Art</h1>
+      <div class="company mt40">
+        <h1 class="my0">&mdash;</h1>
+        <h1 class="my0">2018/07 - 2019/10</h1>
+      </div>
       
-      <p>2018/07 - 2019/10</p>
+      <p class="divide pb40">I was making art during this year.</p>
+
+      <div class="company mt40">
+        <h1 class="my0" id="google">Google</h1>
+        <h1 class="my0">2016/07 - 2018/07</h1>
+      </div>
       
-      <h1 id="google">Google</h1>
+      <h3>Software Engineer</h3>
+      <p class="divide">Keywords: AR/VR, 3D, Unity, C#, iOS, Android, C++, Shaders, Education</p>
       
-      <p>2016/07 - 2018/07<br>
-      Software Engineer<br>
-      Keywords: AR/VR, 3D, Unity, iOS, Android, C++, Shaders, Education</p>
-      
-      <h2 id="googleexpeditions">Google Expeditions</h2>
+      <h2 id="googleexpeditions" class="center">Google Expeditions</h2>
       
       <p>Teachers can use Google Cardboard to lead students on a VR field trip or use AR to teach objects.<br>
       We launched the 2.0 version, which introduced AR.</p>
@@ -82,14 +106,14 @@
       
       <h3 id="whywasitdifficult-2">Why was it difficult?</h3>
       
-      <ul>
+      <ul class="divide">
       <li>Codebase spanned iOS, Android and C++. Getting any new UI input to the renderer required
       modifying layers and layers.</li>
       
       <li>I fixed a time-dependent networking bug inherited from authors long gone.</li>
       </ul>
       
-      <h2 id="toontastic">Toontastic</h2>
+      <h2 id="toontastic" class="center">Toontastic</h2>
       
       <p>Kids can create cartoons by controlling puppets and improving a story.</p>
       
@@ -101,10 +125,10 @@
       
       <h3 id="whywasitdifficult-3">Why was it difficult?</h3>
       
-      <p>The procedurally generated curve for the story arc required my own design instincts beyond
+      <p class="divide">The procedurally generated curve for the story arc required my own design instincts beyond
       the single frame mockup.</p>
       
-      <h2 id="tiltbrushvrarttool20project">Tilt Brush (VR art tool) - 20% project</h2>
+      <h2 id="tiltbrushvrarttool20project" class="center">Tilt Brush (VR art tool) - 20% project</h2>
       
       <h3 id="whatwasmyimpact-4">What was my impact?</h3>
       
@@ -112,19 +136,20 @@
       
       <h3 id="whywasitdifficult-4">Why was it difficult?</h3>
       
-      <ul>
+      <ul class="divide">
       <li>I decided what the brushes would look like.</li>
       
       <li>Shader code is hard to debug.</li>
       </ul>
       
-      <h1 id="google-1">Google</h1>
+      <div class="company mt40">
+        <h1 class="my0" id="google-1">Google</h1>
+        <h1 class="my0">2015/07 - 2016/07</h1>
+      </div>
+      <h3>Software Engineer Resident</h3>
+      <p class="divide">Keywords - C++, Motion Planning, Visualization, Android</p>
       
-      <p>2015/07 - 2016/07
-      Software Engineer Resident
-      Keywords - C++, Motion Planning, Visualization, Android</p>
-      
-      <h2 id="waymoautonomousvehicles">Waymo (autonomous vehicles)</h2>
+      <h2 id="waymoautonomousvehicles" class="center">Waymo (autonomous vehicles)</h2>
       
       <p>I was on the motion planning team.</p>
       
@@ -135,40 +160,37 @@
       
       <h3 id="whywasitdifficult-5">Why was it difficult?</h3>
       
-      <p>I hypothesized algorithms, tested them in simulation, then threw them away and tried again.</p>
+      <p class="divide">I hypothesized algorithms, tested them in simulation, then threw them away and tried again.</p>
       
-      <h2 id="androidsbuiltinalarmclockapp">Android's Builtin Alarm Clock App</h2>
+      <h2 id="androidsbuiltinalarmclockapp" class="center">Android's Builtin Alarm Clock App</h2>
       
       <h3 id="whatwasmyimpact-6">What was my impact?</h3>
       
-      <p>I made improvements to the UI.</p>
+      <p class="divide">I made improvements to the UI.</p>
       
-      <h1 id="google-2">Google</h1>
+      <div class="company mt40">
+        <h1 class="my0" id="google-2">Google</h1>
+        <h1 class="my0">2014, Summer</h1>
+      </div>
+
+      <h3>Software Engineer Intern</h3>
+      <p class="divide">Keywords: Javascript, CSS, Web Animations, Closure Compiler</p>
       
-      <p>2014, Summer<br>
-      Software Engineer Intern<br>
-      Keywords: Javascript, CSS, Web Animations, Closure Compiler</p>
-      
-      <h2 id="internalwebframework">Internal Web Framework</h2>
+      <h2 id="internalwebframework" class="center">Internal Web Framework</h2>
       
       <p>Like React, but for different needs.</p>
       
       <h3 id="whatwasmyimpact-7">What was my impact?</h3>
       
-      <p>I made the framework compatible with Web Components.<br>
+      <p class="divide">I made the framework compatible with Web Components.<br>
       I made Material Design components for the framework's library.</p>
       
-      <h1 id="nirvanix">Nirvanix</h1>
-      
-      <p>2011 - 2014, Intermittent
-      Keywords: Backend, DevOps</p>
-      
-      <p>Quirky things I've made
-      Lemongrassia
-      Rama Rama
-      Ad Infinitum
-      Ray Tracer
-      Ableton MaxMSP Device</p>
+      <div class="company mt40">
+        <h1 class="my0" id="nirvanix">Nirvanix</h1>
+        <h1 class="my0">2011 - 2014, Intermittent</h1>
+      </div>
+      <h3>Software Engineer Intern</h3>
+      <p>Keywords: Backend, DevOps, C#, Web Services</p>
   </div>
   </body>
 </html>

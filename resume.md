@@ -36,7 +36,7 @@ The UI prevented demo failures and enabled users outside the dev team: demo oper
 # Google
 2016/07 - 2018/07<br>
 Software Engineer<br>
-Keywords: AR/VR, 3D, Unity, iOS, Android, C++, Shaders, Education
+Keywords: AR/VR, 3D, Unity, C#, iOS, Android, C++, Shaders, Education
 
 ## Google Expeditions
 Teachers can use Google Cardboard to lead students on a VR field trip or use AR to teach objects.<br>
@@ -104,7 +104,8 @@ I made Material Design components for the framework's library.
 
 # Nirvanix
 2011 - 2014, Intermittent
-Keywords: Backend, DevOps
+Software Engineer Intern
+Keywords: Backend, DevOps, C#, Web Services
 
 Quirky things I've made
 Lemongrassia
