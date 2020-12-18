@@ -1,23 +1,27 @@
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.svg"/>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <title>Dylan Phan</title>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Dylan Phan</title>
+  </head>
   <body>
-    
     <div id="topsection">
       <div class="width">
         <div id="open">OPEN FOR BUSINESS</div>
         <p>
-          I make web apps, desktop apps, and software tools.<br>
+          I make web apps, desktop apps, and software tools.<br />
           Looking for project based work!
         </p>
         <p>
-          Dylan Phan<br>
+          Dylan Phan<br />
           hello@dylanphan.com
         </p>
       </div>
@@ -27,168 +31,268 @@
       <h2 class="center">Work Experience</h2>
       <div class="center my20"><img src="img/chevron.svg" /></div>
 
-      <div class="company">
-        <h1 id="zooxautonomousvehicles" class="my0">Zoox (autonomous vehicles)</h1>
-        <h1 class="my0 date">2019/10 - 2020/09</h1>
-      </div>
-      <h3>Software Engineer</h3>
-      <p class="divide">Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release Management</p>
-      
-      <h2 id="coredash" class="center">CoreDash</h2>
-      
-      <p>The safety operator's (passenger seat) user interface to the vehicle
-      AI on daily autonomous test drives. I helped completely rewrite this software.</p>
-      
-      <h3 id="whatwasmyimpact">What was my impact?</h3>
-      
-      <p>I coded the mission UI. Without my work, the vehicle could not move.</p>
-      
-      <h3 id="whywasitdifficult">Why was it difficult?</h3>
-      
-      <ul class="divide">
-      <li>Some features could only be tested on-vehicle. It took live debugging over chat
-      to get leads on any bugs.</li>
-      
-      <li>Missions required a single point of coordination with 3 other teams.</li>
-      
-      <li>Required judgement calls on how to handle edge cases beyond the UI mockup.</li>
-      
-      <li>Unique, heterogeneous IPC stack required troubleshooting messaging problems
-      and caused build problems on individual dev machines.</li>
-      
-      <li>Complex async state with clunky APIs.</li>
-      </ul>
-      
-      <h2 id="fleetpairingdashboard" class="center">Fleet Pairing Dashboard</h2>
-      
-      <p>A web UI to help manage vehicle configuration.</p>
-      
-      <h3 id="whatwasmyimpact-1">What was my impact?</h3>
-      
-      <p>The UI prevented demo failures and enabled users outside the dev team: demo operators, QA, other devs.</p>
-      
-      <h3 id="whywasitdifficult-1">Why was it difficult?</h3>
-      
-      <ul class="divide">
-      <li>I created this dashboard from scratch by myself.</li>
-      
-      <li>This was an urgent request, and I had to learn Vue.</li>
-      
-      <li>No support from UX designers.</li>
-      </ul>
-      
-      <div class="company mt40">
-        <h1 class="my0">&mdash;</h1>
-        <h1 class="my0">2018/07 - 2019/10</h1>
-      </div>
-      
-      <p class="divide pb40">I was making art during this year.</p>
+      <div class="card">
+        <div class="company">
+          <h1 id="zooxautonomousvehicles" class="my0 company-title">
+            Stealth Machine Company
+          </h1>
+          <h1 class="my0 date">2020/10 - Present</h1>
+        </div>
+        <h3>Software Engineering Manager (Consultant)</h3>
+        <p class="divide">
+          Keywords: Project Management, UI Design, Python, Flask, SQL,
+          SQLAlchemy
+        </p>
 
-      <div class="company mt40">
-        <h1 class="my0" id="google">Google</h1>
-        <h1 class="my0">2016/07 - 2018/07</h1>
-      </div>
-      
-      <h3>Software Engineer</h3>
-      <p class="divide">Keywords: AR/VR, 3D, Unity, C#, iOS, Android, C++, Shaders, Education</p>
-      
-      <h2 id="googleexpeditions" class="center">Google Expeditions</h2>
-      
-      <p>Teachers can use Google Cardboard to lead students on a VR field trip or use AR to teach objects.<br>
-      We launched the 2.0 version, which introduced AR.</p>
-      
-      <h3 id="whatwasmyimpact-2">What was my impact?</h3>
-      
-      <p>I coded the 3D and 2D UI for AR manipulation.
-      I helped us meet the quality bar for launch.</p>
-      
-      <h3 id="whywasitdifficult-2">Why was it difficult?</h3>
-      
-      <ul class="divide">
-      <li>Codebase spanned iOS, Android and C++. Getting any new UI input to the renderer required
-      modifying layers and layers.</li>
-      
-      <li>I fixed a time-dependent networking bug inherited from authors long gone.</li>
-      </ul>
-      
-      <h2 id="toontastic" class="center">Toontastic</h2>
-      
-      <p>Kids can create cartoons by controlling puppets and improving a story.</p>
-      
-      <h3 id="whatwasmyimpact-3">What was my impact?</h3>
-      
-      <p>I coded the scene arrangement and music selection UIs.<br>
-      I made character control really juicy.<br>
-      I helped us meet the quality bar for launch.</p>
-      
-      <h3 id="whywasitdifficult-3">Why was it difficult?</h3>
-      
-      <p class="divide">The procedurally generated curve for the story arc required my own design instincts beyond
-      the single frame mockup.</p>
-      
-      <h2 id="tiltbrushvrarttool20project" class="center">Tilt Brush (VR art tool) - 20% project</h2>
-      
-      <h3 id="whatwasmyimpact-4">What was my impact?</h3>
-      
-      <p>I made paintbrushes that were wackier than any existing brush. Procedurally generated.</p>
-      
-      <h3 id="whywasitdifficult-4">Why was it difficult?</h3>
-      
-      <ul class="divide">
-      <li>I decided what the brushes would look like.</li>
-      
-      <li>Shader code is hard to debug.</li>
-      </ul>
-      
-      <div class="company mt40">
-        <h1 class="my0" id="google-1">Google</h1>
-        <h1 class="my0">2015/07 - 2016/07</h1>
-      </div>
-      <h3>Software Engineer Resident</h3>
-      <p class="divide">Keywords - C++, Motion Planning, Visualization, Android</p>
-      
-      <h2 id="waymoautonomousvehicles" class="center">Waymo (autonomous vehicles)</h2>
-      
-      <p>I was on the motion planning team.</p>
-      
-      <h3 id="whatwasmyimpact-5">What was my impact?</h3>
-      
-      <p>I improved our collision mitigation and collected metrics to show evidence.<br>
-      I reduced the number of pedestrian collisions in simulation.</p>
-      
-      <h3 id="whywasitdifficult-5">Why was it difficult?</h3>
-      
-      <p class="divide">I hypothesized algorithms, tested them in simulation, then threw them away and tried again.</p>
-      
-      <h2 id="androidsbuiltinalarmclockapp" class="center">Android's Builtin Alarm Clock App</h2>
-      
-      <h3 id="whatwasmyimpact-6">What was my impact?</h3>
-      
-      <p class="divide">I made improvements to the UI.</p>
-      
-      <div class="company mt40">
-        <h1 class="my0" id="google-2">Google</h1>
-        <h1 class="my0">2014, Summer</h1>
+        <p>
+          Stealth Machine is an early stage startup that aims to build automated
+          factories.
+        </p>
+        <div>
+          I'm responsible for project management, system architecture and UI
+          design.
+        </div>
       </div>
 
-      <h3>Software Engineer Intern</h3>
-      <p class="divide">Keywords: Javascript, CSS, Web Animations, Closure Compiler</p>
-      
-      <h2 id="internalwebframework" class="center">Internal Web Framework</h2>
-      
-      <p>Like React, but for different needs.</p>
-      
-      <h3 id="whatwasmyimpact-7">What was my impact?</h3>
-      
-      <p class="divide">I made the framework compatible with Web Components.<br>
-      I made Material Design components for the framework's library.</p>
-      
-      <div class="company mt40">
-        <h1 class="my0" id="nirvanix">Nirvanix</h1>
-        <h1 class="my0">2011 - 2014, Intermittent</h1>
+      <div class="card">
+        <div class="company">
+          <h1 id="zooxautonomousvehicles" class="my0 company-title">
+            Zoox (autonomous vehicles)
+          </h1>
+          <h1 class="my0 date">2019/10 - 2020/09</h1>
+        </div>
+        <h3>Software Engineer</h3>
+        <p class="divide">
+          Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release
+          Management
+        </p>
+
+        <h2 id="coredash" class="center">CoreDash</h2>
+
+        <p>
+          The safety operator's (passenger seat) user interface to the vehicle
+          AI on daily autonomous test drives. I helped completely rewrite this
+          software.
+        </p>
+
+        <h3 id="whatwasmyimpact">What was my impact?</h3>
+
+        <p>
+          I coded the mission UI. Without my work, the vehicle could not move.
+        </p>
+
+        <h3 id="whywasitdifficult">Why was it difficult?</h3>
+
+        <ul class="divide">
+          <li>
+            Some features could only be tested on-vehicle. It took live
+            debugging over chat to get leads on any bugs.
+          </li>
+
+          <li>
+            Missions required a single point of coordination with 3 other teams.
+          </li>
+
+          <li>
+            Required judgement calls on how to handle edge cases beyond the UI
+            mockup.
+          </li>
+
+          <li>
+            Unique, heterogeneous IPC stack required troubleshooting messaging
+            problems and caused build problems on individual dev machines.
+          </li>
+
+          <li>Complex async state with clunky APIs.</li>
+        </ul>
+
+        <h2 id="fleetpairingdashboard" class="center">
+          Fleet Pairing Dashboard
+        </h2>
+
+        <p>A web UI to help manage vehicle configuration.</p>
+
+        <h3 id="whatwasmyimpact-1">What was my impact?</h3>
+
+        <p>
+          The UI prevented demo failures and enabled users outside the dev team:
+          demo operators, QA, other devs.
+        </p>
+
+        <h3 id="whywasitdifficult-1">Why was it difficult?</h3>
+
+        <ul class="">
+          <li>I created this dashboard from scratch by myself.</li>
+
+          <li>This was an urgent request, and I had to learn Vue.</li>
+
+          <li>No support from UX designers.</li>
+        </ul>
       </div>
-      <h3>Software Engineer Intern</h3>
-      <p>Keywords: Backend, DevOps, C#, Web Services</p>
-  </div>
+
+      <div class="card">
+        <div class="company">
+          <h1 class="my0">&mdash;</h1>
+          <h1 class="my0">2018/07 - 2019/10</h1>
+        </div>
+
+        <div class="mt20">I was making art during this year.</div>
+      </div>
+
+      <div class="card">
+        <div class="company">
+          <h1 class="my0 company-title" id="google">Google</h1>
+          <h1 class="my0">2016/07 - 2018/07</h1>
+        </div>
+
+        <h3>Software Engineer</h3>
+        <p class="divide">
+          Keywords: AR/VR, 3D, Unity, C#, iOS, Android, C++, Shaders, Education
+        </p>
+
+        <h2 id="googleexpeditions" class="center">Google Expeditions</h2>
+
+        <p>
+          Teachers can use Google Cardboard to lead students on a VR field trip
+          or use AR to teach objects.<br />
+          We launched the 2.0 version, which introduced AR.
+        </p>
+
+        <h3 id="whatwasmyimpact-2">What was my impact?</h3>
+
+        <p>
+          I coded the 3D and 2D UI for AR manipulation. I helped us meet the
+          quality bar for launch.
+        </p>
+
+        <h3 id="whywasitdifficult-2">Why was it difficult?</h3>
+
+        <ul class="divide">
+          <li>
+            Codebase spanned iOS, Android and C++. Getting any new UI input to
+            the renderer required modifying layers and layers.
+          </li>
+
+          <li>
+            I fixed a time-dependent networking bug inherited from authors long
+            gone.
+          </li>
+        </ul>
+
+        <h2 id="toontastic" class="center">Toontastic</h2>
+
+        <p>
+          Kids can create cartoons by controlling puppets and improving a story.
+        </p>
+
+        <h3 id="whatwasmyimpact-3">What was my impact?</h3>
+
+        <p>
+          I coded the scene arrangement and music selection UIs.<br />
+          I made character control really juicy.<br />
+          I helped us meet the quality bar for launch.
+        </p>
+
+        <h3 id="whywasitdifficult-3">Why was it difficult?</h3>
+
+        <p class="divide">
+          The procedurally generated curve for the story arc required my own
+          design instincts beyond the single frame mockup.
+        </p>
+
+        <h2 id="tiltbrushvrarttool20project" class="center">
+          Tilt Brush (VR art tool) - 20% project
+        </h2>
+
+        <h3 id="whatwasmyimpact-4">What was my impact?</h3>
+
+        <p>
+          I made paintbrushes that were wackier than any existing brush.
+          Procedurally generated.
+        </p>
+
+        <h3 id="whywasitdifficult-4">Why was it difficult?</h3>
+
+        <ul class="">
+          <li>I decided what the brushes would look like.</li>
+
+          <li>Shader code is hard to debug.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="company">
+          <h1 class="my0 company-title" id="google-1">Google</h1>
+          <h1 class="my0">2015/07 - 2016/07</h1>
+        </div>
+        <h3>Software Engineer Resident</h3>
+        <p class="divide">
+          Keywords - C++, Motion Planning, Visualization, Android
+        </p>
+
+        <h2 id="waymoautonomousvehicles" class="center">
+          Waymo (autonomous vehicles)
+        </h2>
+
+        <p>I was on the motion planning team.</p>
+
+        <h3 id="whatwasmyimpact-5">What was my impact?</h3>
+
+        <p>
+          I improved our collision mitigation and collected metrics to show
+          evidence.<br />
+          I reduced the number of pedestrian collisions in simulation.
+        </p>
+
+        <h3 id="whywasitdifficult-5">Why was it difficult?</h3>
+
+        <p class="divide">
+          I hypothesized algorithms, tested them in simulation, then threw them
+          away and tried again.
+        </p>
+
+        <h2 id="androidsbuiltinalarmclockapp" class="center">
+          Android's Builtin Alarm Clock App
+        </h2>
+
+        <h3 id="whatwasmyimpact-6">What was my impact?</h3>
+
+        <div class="">I made improvements to the UI.</div>
+      </div>
+
+      <div class="card">
+        <div class="company">
+          <h1 class="my0 company-title" id="google-2">Google</h1>
+          <h1 class="my0">2014, Summer</h1>
+        </div>
+
+        <h3>Software Engineer Intern</h3>
+        <p class="divide">
+          Keywords: Javascript, CSS, Web Animations, Closure Compiler
+        </p>
+
+        <h2 id="internalwebframework" class="center">
+          Proprietary Web Framework
+        </h2>
+
+        <p>Like Angular, but for Google's internal needs.</p>
+
+        <h3 id="whatwasmyimpact-7">What was my impact?</h3>
+
+        <p class="my0">
+          I made the framework compatible with Web Components.<br />
+          I made Material Design components for the framework's library.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="company">
+          <h1 class="my0 company-title" id="nirvanix">Nirvanix</h1>
+          <h1 class="my0">2011 - 2014, Intermittent</h1>
+        </div>
+        <h3>Software Engineer Intern</h3>
+        <div>Keywords: Backend, DevOps, C#, Web Services</div>
+      </div>
+    </div>
   </body>
 </html>
