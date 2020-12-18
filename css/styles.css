@@ -201,6 +201,12 @@ h3 {
   text-decoration-color: rgb(0, 0, 0, .5);
   color: black;
 }
+
+.date {
+  font-weight: 300;
+}
+
 .name {
   font-weight: bold;
 }
+
