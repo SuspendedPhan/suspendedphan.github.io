@@ -32,9 +32,11 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 100px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #B1E3FF;
+  border-bottom: 1px solid rgb(58, 183, 255);
+  /* border-bottom: 1px solid rgb(177, 227, 255); */
   position: relative;
   font-size: 18px;
 }
@@ -125,6 +127,9 @@ ul > li {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.mt0 {
+  margin-top: 0 !important;
+}
 
 .center {
   text-align: center;
@@ -149,11 +154,17 @@ ul > li {
 }
 
 .mt20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .mb40 {
   margin-bottom: 40px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mt10 {
+  margin-top: 10px !important;
 }
 
 .divide {
@@ -189,4 +200,7 @@ h3 {
   text-decoration: underline;
   text-decoration-color: rgb(0, 0, 0, .5);
   color: black;
+}
+.name {
+  font-weight: bold;
 }
