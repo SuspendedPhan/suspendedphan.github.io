@@ -27,6 +27,7 @@ p {
 }
 
 #topsection {
+  text-align: center;
   background: rgba(219, 242, 255, 0.59);
   /* background: rgba(219, 242, 255, 0.19); */
   width: 100%;
@@ -133,6 +134,7 @@ ul > li {
 .company {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 
 .my0 {
@@ -163,4 +165,19 @@ ul > li {
 
 .pb40 {
   padding-bottom: 40px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.company-title {
+  /* font-weight: 300; */
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.5);
+  /* margin-top: 40px; */
 }
