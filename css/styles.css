@@ -32,11 +32,16 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 100px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #B1E3FF;
+  border-bottom: 1px solid rgb(58, 183, 255);
+  /* border-bottom: 1px solid rgb(177, 227, 255); */
   position: relative;
   font-size: 18px;
+}
+.name {
+  font-weight: bold;
 }
   
 
@@ -142,6 +147,10 @@ ul > li {
 
 .mt40 {
   margin-top: 40px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
 }
 
 .mb20 {
