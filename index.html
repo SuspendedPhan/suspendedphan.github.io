@@ -25,7 +25,7 @@
         <section class="video-section" aria-label="Primitive Animator feature demonstrations">
             <div class="video-row">
                 <div class="video-container">
-                    <video autoplay muted loop playsinline aria-label="Visual expression editor demonstration">
+                    <video autoplay muted loop plwaysinline aria-label="Visual expression editor demonstration">
                         <source src="editor.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -131,6 +131,92 @@
             </div>
         </section>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged media view">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" src="" alt="">
+                <video class="lightbox-video" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxOverlay = lightbox.querySelector('.lightbox-overlay');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const lightboxImage = lightbox.querySelector('.lightbox-image');
+        const lightboxVideo = lightbox.querySelector('.lightbox-video');
+        const lightboxMedia = lightbox.querySelector('.lightbox-media');
+
+        // Open lightbox with image
+        function openLightboxWithImage(src, alt) {
+            lightboxImage.src = src;
+            lightboxImage.alt = alt;
+            lightboxImage.style.display = 'block';
+            lightboxVideo.style.display = 'none';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Open lightbox with video
+        function openLightboxWithVideo(src) {
+            lightboxVideo.querySelector('source').src = src;
+            lightboxVideo.load();
+            lightboxVideo.style.display = 'block';
+            lightboxImage.style.display = 'none';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            // Play video when opened
+            lightboxVideo.play().catch(e => console.log('Video autoplay prevented:', e));
+        }
+
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+            // Pause video when closing
+            if (lightboxVideo.style.display !== 'none') {
+                lightboxVideo.pause();
+            }
+        }
+
+        // Add click listeners to hero image
+        const heroImage = document.querySelector('.hero-image');
+        if (heroImage) {
+            heroImage.addEventListener('click', () => {
+                openLightboxWithImage(heroImage.src, heroImage.alt);
+            });
+        }
+
+        // Add click listeners to all videos
+        const videos = document.querySelectorAll('.video-container video');
+        videos.forEach(video => {
+            video.addEventListener('click', () => {
+                const source = video.querySelector('source');
+                if (source) {
+                    openLightboxWithVideo(source.src);
+                }
+            });
+        });
+
+        // Close lightbox handlers
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxOverlay.addEventListener('click', closeLightbox);
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    </script>
 
 </body>
 </html>

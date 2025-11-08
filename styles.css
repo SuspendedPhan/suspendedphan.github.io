@@ -79,6 +79,7 @@ main {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     border: 1px solid var(--border);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .hero-image:hover {
@@ -131,6 +132,7 @@ main {
     height: auto;
     display: block;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .video-description {
@@ -272,6 +274,108 @@ footer {
     color: var(--text-secondary);
 }
 
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.lightbox-content {
+    position: relative;
+    z-index: 10000;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-media {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.lightbox-video {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    color: var(--accent-hover);
+    transform: scale(1.1);
+}
+
+.lightbox-close:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .video-row {
@@ -330,6 +434,18 @@ footer {
 
     .video-container:hover {
         transform: none;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        font-size: 2.5rem;
+    }
+
+    .lightbox-image,
+    .lightbox-video {
+        max-width: 95vw;
+        max-height: 85vh;
     }
 }
 
