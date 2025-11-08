@@ -1,293 +1,141 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Dylan Phan</title>
-  </head>
-  <body>
-    <div id="topsection">
-      <div class="width">
-        <div class='mb10 name'>Dylan Phan</div>
-        <div class='mb10'>hello@dylanphan.com</div>
-        <div class=''>San Francisco, CA</div>
-      </div>
-    </div>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Animator - IDE for Motion Graphics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Primitive Animator</h1>
+        <p class="subtitle">An IDE for motion graphics</p>
+        <p class="description">Build motion graphics with a visual expression tree. Navigate and manipulate functions, parameters, and expressions with keyboard shortcuts.</p>
+    </header>
 
-    <div class="width experience mt40">
-      <h2 class="center">Work Experience</h2>
-      <div class="center my20"><img src="img/chevron.svg" /></div>
+    <main>
+        <section class="hero" aria-label="Primitive Animator interface preview">
+            <img src="features.png" alt="Primitive Animator interface showing visual expression editor with project files, expression tree, and canvas preview" class="hero-image" loading="eager">
+        </section>
 
-      <div class="card">
-        <div class="company">
-          <h1 id="zooxautonomousvehicles" class="my0 company-title">
-            Stealth Machine Company
-          </h1>
-          <h1 class="my0 date">2020/10 - Present</h1>
-        </div>
-        <h3>Software Engineering Manager (Consultant)</h3>
-        <p class="divide">
-          Keywords: Project Management, UI Design, Python, Flask, SQL,
-          SQLAlchemy
-        </p>
+        <section class="video-section" aria-label="Primitive Animator feature demonstrations">
+            <div class="video-row">
+                <div class="video-container">
+                    <video autoplay muted loop playsinline aria-label="Visual expression editor demonstration">
+                        <source src="editor.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h2>Visual Expression Editor</h2>
+                    <p>See your animations update in real time as you edit.</p>
+                </div>
+            </div>
 
-        <p>
-          Stealth Machine is an early stage startup that aims to build automated
-          factories.
-        </p>
-        <div>
-          I'm responsible for project management, system architecture and UI
-          design.
-        </div>
-      </div>
+            <div class="video-row video-row-reverse">
+                <div class="video-container">
+                    <video autoplay muted loop playsinline aria-label="Keyboard navigation demonstration">
+                        <source src="keyboard.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h2>Keyboard-Driven Workflow</h2>
+                    <p>All UI elements are accessible via keyboard navigation.</p>
+                </div>
+            </div>
 
-      <div class="card">
-        <div class="company">
-          <h1 id="zooxautonomousvehicles" class="my0 company-title">
-            Zoox (autonomous vehicles)
-          </h1>
-          <h1 class="my0 date">2019/10 - 2020/09</h1>
-        </div>
-        <h3>Software Engineer</h3>
-        <p class="divide">
-          Keywords: Vue, threejs, TypeScript, CSS, C++, Unreal Engine, Release
-          Management
-        </p>
+            <div class="video-row">
+                <div class="video-container">
+                    <video autoplay muted loop playsinline aria-label="Flexible layout demonstration">
+                        <source src="resize.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h2>Flexible Layout</h2>
+                    <p>Maximize the editor or canvas, or use a multi-pane layout.</p>
+                </div>
+            </div>
+        </section>
 
-        <h2 id="coredash" class="center">CoreDash</h2>
+        <section class="features">
+            <h2>Features</h2>
+            
+            <div class="feature-grid">
+                <article class="feature-item">
+                    <h3>Rich Built-In Functions</h3>
+                    <p>Access math operations, drawing primitives (circles, rectangles), noise functions (Simplex 1D/2D), easing curves, time-based functions, and more. Compose them to create complex animations.</p>
+                </article>
 
-        <p>
-          The safety operator's (passenger seat) user interface to the vehicle
-          AI on daily autonomous test drives. I helped completely rewrite this
-          software.
-        </p>
+                <article class="feature-item">
+                    <h3>Function and Parameter System</h3>
+                    <p>Organize code into reusable functions with parameters. Move functions between files, convert expressions to functions, and build a library of reusable components.</p>
+                </article>
 
-        <h3 id="whatwasmyimpact">What was my impact?</h3>
+                <article class="feature-item">
+                    <h3>Multi-Project Workspace</h3>
+                    <p>Manage multiple projects in one workspace. Organize code into project files and shared library files. Switch between projects quickly.</p>
+                </article>
 
-        <p>
-          I coded the mission UI. Without my work, the vehicle could not move.
-        </p>
+                <article class="feature-item">
+                    <h3>Keyboard-Driven Workflow</h3>
+                    <p>Navigate and edit with keyboard shortcuts. Use the command palette (Cmd+K) for quick actions: create functions, navigate, convert expressions, and more.</p>
+                </article>
 
-        <h3 id="whywasitdifficult">Why was it difficult?</h3>
+                <article class="feature-item">
+                    <h3>Flexible Layout</h3>
+                    <p>Arrange editor, canvas, and browser panes to fit your workflow. Maximize the editor or canvas, or use a multi-pane layout.</p>
+                </article>
 
-        <ul class="divide">
-          <li>
-            Some features could only be tested on-vehicle. It took live
-            debugging over chat to get leads on any bugs.
-          </li>
+                <article class="feature-item">
+                    <h3>Powerful Drawing Primitives</h3>
+                    <p>Draw shapes with position, size, color (HSV), and opacity. Use system functions like <code>DrawCircle</code> and <code>DrawRectangle</code> to build visual compositions.</p>
+                </article>
 
-          <li>
-            Missions required a single point of coordination with 3 other teams.
-          </li>
+                <article class="feature-item">
+                    <h3>Time-Based Animation</h3>
+                    <p>Access the current time and use it to drive animations. Combine with easing functions and math operations to create smooth motion.</p>
+                </article>
 
-          <li>
-            Required judgement calls on how to handle edge cases beyond the UI
-            mockup.
-          </li>
+                <article class="feature-item">
+                    <h3>Expression Manipulation</h3>
+                    <p>Move expressions in the tree, cut and paste, convert expressions to functions or parameters, and refactor code with keyboard shortcuts.</p>
+                </article>
 
-          <li>
-            Unique, heterogeneous IPC stack required troubleshooting messaging
-            problems and caused build problems on individual dev machines.
-          </li>
+                <article class="feature-item">
+                    <h3>Project Persistence</h3>
+                    <p>Projects save automatically. Export and import project data as JSON for version control and sharing.</p>
+                </article>
+            </div>
+        </section>
 
-          <li>Complex async state with clunky APIs.</li>
-        </ul>
+        <section class="architecture">
+            <h2>Architecture Overview</h2>
+            
+            <div class="architecture-content">
+                <div class="architecture-section">
+                    <h3>Technology Stack</h3>
+                    <ul>
+                        <li><strong>Domain logic</strong>: Haskell compiled to WebAssembly via GHC-WASM</li>
+                        <li><strong>Expression evaluation</strong>: Rust compiled to WebAssembly using <code>wasm-pack</code> for high-performance expression evaluation</li>
+                        <li><strong>Templates and styling</strong>: React + TypeScript with Vite build system</li>
+                        <li><strong>Type Safety</strong>: End-to-end type safety via auto-generated TypeScript definitions from Haskell types</li>
+                        <li><strong>Communication</strong>: WASM FFI bridge between Haskell/JavaScript and Rust/JavaScript with typed message passing</li>
+                    </ul>
+                </div>
 
-        <h2 id="fleetpairingdashboard" class="center">
-          Fleet Pairing Dashboard
-        </h2>
+                <div class="architecture-section">
+                    <h3>Reactive Architecture</h3>
+                    <ul>
+                        <li>Selector-based data flow: React components subscribe to Haskell selectors via <code>useDh</code> hooks</li>
+                        <li>Action system: UI triggers actions that execute in Haskell monadic context (<code>AppOp</code>)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <p>A web UI to help manage vehicle configuration.</p>
-
-        <h3 id="whatwasmyimpact-1">What was my impact?</h3>
-
-        <p>
-          The UI prevented demo failures and enabled users outside the dev team:
-          demo operators, QA, other devs.
-        </p>
-
-        <h3 id="whywasitdifficult-1">Why was it difficult?</h3>
-
-        <ul class="">
-          <li>I created this dashboard from scratch by myself.</li>
-
-          <li>This was an urgent request, and I had to learn Vue.</li>
-
-          <li>No support from UX designers.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="company">
-          <h1 class="my0">&mdash;</h1>
-          <h1 class="my0">2018/07 - 2019/10</h1>
-        </div>
-
-        <div class="mt20">I was making art during this year.</div>
-      </div>
-
-      <div class="card">
-        <div class="company">
-          <h1 class="my0 company-title" id="google">Google</h1>
-          <h1 class="my0">2016/07 - 2018/07</h1>
-        </div>
-
-        <h3>Software Engineer</h3>
-        <p class="divide">
-          Keywords: AR/VR, 3D, Unity, C#, iOS, Android, C++, Shaders, Education
-        </p>
-
-        <h2 id="googleexpeditions" class="center">Google Expeditions</h2>
-
-        <p>
-          Teachers can use Google Cardboard to lead students on a VR field trip
-          or use AR to teach objects.<br />
-          We launched the 2.0 version, which introduced AR.
-        </p>
-
-        <h3 id="whatwasmyimpact-2">What was my impact?</h3>
-
-        <p>
-          I coded the 3D and 2D UI for AR manipulation. I helped us meet the
-          quality bar for launch.
-        </p>
-
-        <h3 id="whywasitdifficult-2">Why was it difficult?</h3>
-
-        <ul class="divide">
-          <li>
-            Codebase spanned iOS, Android and C++. Getting any new UI input to
-            the renderer required modifying layers and layers.
-          </li>
-
-          <li>
-            I fixed a time-dependent networking bug inherited from authors long
-            gone.
-          </li>
-        </ul>
-
-        <h2 id="toontastic" class="center">Toontastic</h2>
-
-        <p>
-          Kids can create cartoons by controlling puppets and improving a story.
-        </p>
-
-        <h3 id="whatwasmyimpact-3">What was my impact?</h3>
-
-        <p>
-          I coded the scene arrangement and music selection UIs.<br />
-          I made character control really juicy.<br />
-          I helped us meet the quality bar for launch.
-        </p>
-
-        <h3 id="whywasitdifficult-3">Why was it difficult?</h3>
-
-        <p class="divide">
-          The procedurally generated curve for the story arc required my own
-          design instincts beyond the single frame mockup.
-        </p>
-
-        <h2 id="tiltbrushvrarttool20project" class="center">
-          Tilt Brush (VR art tool) - 20% project
-        </h2>
-
-        <h3 id="whatwasmyimpact-4">What was my impact?</h3>
-
-        <p>
-          I made paintbrushes that were wackier than any existing brush.
-          Procedurally generated.
-        </p>
-
-        <h3 id="whywasitdifficult-4">Why was it difficult?</h3>
-
-        <ul class="">
-          <li>I decided what the brushes would look like.</li>
-
-          <li>Shader code is hard to debug.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="company">
-          <h1 class="my0 company-title" id="google-1">Google</h1>
-          <h1 class="my0">2015/07 - 2016/07</h1>
-        </div>
-        <h3>Software Engineer Resident</h3>
-        <p class="divide">
-          Keywords - C++, Motion Planning, Visualization, Android
-        </p>
-
-        <h2 id="waymoautonomousvehicles" class="center">
-          Waymo (autonomous vehicles)
-        </h2>
-
-        <p>I was on the motion planning team.</p>
-
-        <h3 id="whatwasmyimpact-5">What was my impact?</h3>
-
-        <p>
-          I improved our collision mitigation and collected metrics to show
-          evidence.<br />
-          I reduced the number of pedestrian collisions in simulation.
-        </p>
-
-        <h3 id="whywasitdifficult-5">Why was it difficult?</h3>
-
-        <p class="divide">
-          I hypothesized algorithms, tested them in simulation, then threw them
-          away and tried again.
-        </p>
-
-        <h2 id="androidsbuiltinalarmclockapp" class="center">
-          Android's Builtin Alarm Clock App
-        </h2>
-
-        <h3 id="whatwasmyimpact-6">What was my impact?</h3>
-
-        <div class="">I made improvements to the UI.</div>
-      </div>
-
-      <div class="card">
-        <div class="company">
-          <h1 class="my0 company-title" id="google-2">Google</h1>
-          <h1 class="my0">2014, Summer</h1>
-        </div>
-
-        <h3>Software Engineer Intern</h3>
-        <p class="divide">
-          Keywords: Javascript, CSS, Web Animations, Closure Compiler
-        </p>
-
-        <h2 id="internalwebframework" class="center">
-          Proprietary Web Framework
-        </h2>
-
-        <p>Like Angular, but for Google's internal needs.</p>
-
-        <h3 id="whatwasmyimpact-7">What was my impact?</h3>
-
-        <p class="my0">
-          I made the framework compatible with Web Components.<br />
-          I made Material Design components for the framework's library.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="company">
-          <h1 class="my0 company-title" id="nirvanix">Nirvanix</h1>
-          <h1 class="my0">2011 - 2014, Intermittent</h1>
-        </div>
-        <h3>Software Engineer Intern</h3>
-        <div>Keywords: Backend, DevOps, C#, Web Services</div>
-      </div>
-    </div>
-  </body>
+    <footer>
+        <p>&copy; 2024 Primitive Animator</p>
+    </footer>
+</body>
 </html>
+
