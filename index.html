@@ -13,7 +13,9 @@
         <p class="description">
             Hi! This is the landing page for my passion project.
             I'm still working on it (sorry, no interactive demo yet), but I'm excited to share it with you.
-            I love exploring different paradigms, so this static webapp uses a unique tech stack: React, Haskell (WebAssembly) and Rust (WebAssembly). More details below.
+        </p>
+        <p class="description">
+            I love experimenting with different paradigms, so this static webapp uses a unique tech stack: React, Haskell (WebAssembly) and Rust (WebAssembly). More details below.
         </p>
     </header>
 
@@ -25,7 +27,7 @@
         <section class="video-section" aria-label="Primitive Animator feature demonstrations">
             <div class="video-row">
                 <div class="video-container">
-                    <video autoplay muted loop plwaysinline aria-label="Visual expression editor demonstration">
+                    <video autoplay muted loop playsinline aria-label="Visual expression editor demonstration">
                         <source src="editor.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -65,41 +67,91 @@
             
             <div class="feature-grid">
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"></path>
+                        </svg>
+                    </div>
                     <h3>Rich Built-In Functions</h3>
                     <p>Access math operations, drawing primitives (circles, rectangles), noise functions (Simplex 1D/2D), easing curves, time-based functions, and more. Compose them to create complex animations.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <path d="M9 9h6M9 15h6M9 12h6"></path>
+                        </svg>
+                    </div>
                     <h3>Function and Parameter System</h3>
                     <p>Organize code into reusable functions with parameters. Move functions between files, convert expressions to functions, and build a library of reusable components.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            <path d="M12 11v6M9 14h6"></path>
+                        </svg>
+                    </div>
                     <h3>Multi-Project Workspace</h3>
                     <p>Manage multiple projects in one workspace. Organize code into project files and shared library files. Switch between projects quickly.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                            <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M6 16h.01M10 16h.01M14 16h.01M18 16h.01"></path>
+                        </svg>
+                    </div>
                     <h3>Keyboard-Driven Workflow</h3>
                     <p>Navigate and edit with keyboard shortcuts. Use the command palette (Cmd+K) for quick actions: create functions, navigate, convert expressions, and more.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
                     <h3>Powerful Drawing Primitives</h3>
                     <p>Draw shapes with position, size, color (HSV), and opacity. Use system functions like <code>DrawCircle</code> and <code>DrawRectangle</code> to build visual compositions.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
                     <h3>Time-Based Animation</h3>
                     <p>Access the current time and use it to drive animations. Combine with easing functions and math operations to create smooth motion.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
                     <h3>Expression Manipulation</h3>
                     <p>Move expressions in the tree, cut and paste, convert expressions to functions or parameters, and refactor code with keyboard shortcuts.</p>
                 </article>
 
                 <article class="feature-item">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                            <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg>
+                    </div>
                     <h3>Project Persistence</h3>
                     <p>Projects save automatically. Export and import project data as JSON for version control and sharing.</p>
                 </article>
